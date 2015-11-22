@@ -9,5 +9,7 @@ public interface ProductService {
 
 	Product getProductInfo(long productId);
 
+	List<Product> getProductByCategory(String categoryName);
+
 	void saveProduct(String productName, String reference, int price);
 }

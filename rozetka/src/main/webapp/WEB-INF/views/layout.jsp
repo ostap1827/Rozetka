@@ -9,6 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><tiles:getAsString name="title" /></title>
 <link href="<c:url value="/resources/css/home.css" />" rel="stylesheet">
+<script src="<c:url value="https://code.jquery.com/jquery-1.10.2.js" />"></script>
 <link
 	href="<c:url value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />"
 	rel="stylesheet">
@@ -17,6 +18,7 @@
 	rel="stylesheet">
 <script type="text/javascript"
 	src="<c:url value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js" />"></script>
+
 </head>
 <body>
 

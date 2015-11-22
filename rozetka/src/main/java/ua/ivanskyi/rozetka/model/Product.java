@@ -5,18 +5,21 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Product {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column
+	@Column(nullable = false)
 	private String productName;
-	@Column
+	@Column(nullable = false)
 	private String reference;
-	@Column
+	@Column(nullable = false)
 	private Integer price;
+	@ManyToOne
+	private Category category;
 
 	public Product() {
 
@@ -59,6 +62,14 @@ public class Product {
 
 	public void setPrice(Integer price) {
 		this.price = price;
+	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
 	}
 
 }

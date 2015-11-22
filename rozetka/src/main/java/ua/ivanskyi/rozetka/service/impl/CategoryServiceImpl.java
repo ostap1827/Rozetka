@@ -23,8 +23,9 @@ public class CategoryServiceImpl implements CategoryService {
 
 	@Transactional
 	public Category findCategory(long categoryId) {
-		categoryDao.findById(categoryId);
-		return null;
+
+		return categoryDao.findById(categoryId);
+
 	}
 
 	@Transactional

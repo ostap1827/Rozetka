@@ -37,4 +37,9 @@ public class ProductServiceImpl implements ProductService {
 		productDao.save(new Product(productName, reference, price));
 
 	}
+
+	@Transactional
+	public List<Product> getProductByCategory(String categoryName) {
+		return productDao.findByCategory(categoryName);
+	}
 }

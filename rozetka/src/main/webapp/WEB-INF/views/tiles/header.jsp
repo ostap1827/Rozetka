@@ -8,6 +8,7 @@
 		<li role="presentation" class="active"><a href="/rozetka">Home</a></li>
 		<li role="presentation"><a href="/rozetka/product">Products</a></li>
 		<li role="presentation"><a href="/rozetka/registration">Registration</a></li>
+		<li role="presentation"><a href="/rozetka/admin">Administrator</a></li>
 	</ul>
 </div>
 
